@@ -1,7 +1,7 @@
 # US-infl-macro
 
 Forecasting US CPI inflation (YoY, `CPIAUCSL_PC1`) from a monthly macro panel of 28
-predictors, Jan 1994 – Sept 2025. Compares LASSO, Random Forest, XGBoost and ARIMAX on a
+predictors, Jan 1994 – Aug 2025. Compares LASSO, Random Forest, XGBoost and ARIMAX on a
 chronological 70/30 split, with SHAP-based interpretation.
 
 Coursework for the Experimental Economics seminar.
@@ -77,14 +77,14 @@ Stage 1 needs an internet connection (`quantmod::getSymbols`). Stages 2–5 read
 
 ## Results
 
-Out-of-sample performance on the test window (Apr 2016 – Sept 2025, 114 obs):
+Out-of-sample performance on the test window (Mar 2016 – Aug 2025, 114 obs):
 
 | Model | RMSE | MAE | sMAPE |
 |---|---|---|---|
-| LASSO (AR1) | 0.295 | 0.210 | 0.094 |
-| XGBoost (AR1) | 1.526 | 0.804 | 0.207 |
-| Random Forest (AR1) | 1.772 | 0.981 | 0.271 |
-| ARIMAX | 2.171 | 1.352 | 0.406 |
+| LASSO (AR1) | 0.296 | 0.210 | 0.095 |
+| XGBoost (AR1) | 1.534 | 0.792 | 0.202 |
+| Random Forest (AR1) | 1.797 | 0.998 | 0.276 |
+| ARIMAX | 2.179 | 1.357 | 0.407 |
 
 Full table, including the no-lag specifications and in-sample RMSE, in
 `output/tables/results.xlsx`.
