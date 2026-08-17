@@ -18,6 +18,11 @@
 output/logs/
 output/models/
 
+# EMF and PDF exports: still produced by the scripts (EMF for pasting into Word),
+# but not tracked — GitHub cannot render EMF, and they are ~70% of the output bulk.
+*.emf
+output/**/*.pdf
+
 
 ## ---- Data: raw and final are deliberately NOT ignored ------------------------
 # Most R templates ignore data/ wholesale. Do not do that here.
