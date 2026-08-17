@@ -7,18 +7,16 @@
 
 
 ## ---- Generated output -------------------------------------------------------
-# 7.5 MB of the project's 7.9 MB lives here, and it is all derived from R/ + data/.
-# Binary files (png/pdf/emf/xlsx) do not diff, so git stores a complete new copy on
-# every rerun. Committing them means a repo that grows by ~7 MB each time you
-# regenerate figures, in exchange for nothing you cannot rebuild in one command.
+# Figures and tables ARE committed, so the results are visible on GitHub without
+# running anything. They are binary and do not diff, so each regeneration stores a
+# fresh copy — keep reruns that you intend to commit deliberate rather than routine.
 #
-# When you need a fixed snapshot — a paper submission, a supervisor handover — force
-# the specific files in and tag it, rather than tracking the whole tree:
-#     git add -f output/tables/results.xlsx output/figures/final
-#     git commit -m "Figures as submitted, 2026-08"
-#     git tag submission-v1
+# Excluded:
+#   logs/    run transcripts, rewritten every run, and they embed absolute local paths
+#   models/  serialised intermediates, rebuilt by stages 3 and 4
 
-output/
+output/logs/
+output/models/
 
 
 ## ---- Data: raw and final are deliberately NOT ignored ------------------------
