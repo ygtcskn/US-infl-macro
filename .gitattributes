@@ -1,0 +1,35 @@
+# =============================================================================
+# .gitattributes
+# =============================================================================
+# Mostly a Windows concern. Without this, git guesses per file whether something
+# is text, and line endings become a source of phantom diffs — a file you never
+# opened shows up as "every line changed" because CRLF became LF somewhere.
+# =============================================================================
+
+# Normalise line endings: LF in the repository, native in your working copy.
+* text=auto
+
+# Explicit text, so these are never misdetected.
+*.R          text
+*.Rmd        text
+*.md         text
+*.csv        text
+*.txt        text
+*.log        text
+*.Rproj      text
+.gitignore   text
+.gitattributes text
+
+# Explicit binary: never line-ending-converted, never shown as a text diff.
+# Marking these matters most for .rds and .emf, which git will otherwise sniff
+# and can mangle on checkout.
+*.rds        binary
+*.RData      binary
+*.xlsx       binary
+*.xls        binary
+*.png        binary
+*.jpg        binary
+*.pdf        binary
+*.emf        binary
+*.wmf        binary
+*.zip        binary
