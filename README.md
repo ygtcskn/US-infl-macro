@@ -6,7 +6,7 @@ chronological 70/30 split, with SHAP-based interpretation.
 
 Coursework for the Experimental Economics seminar.
 
-<img src="https://raw.githubusercontent.com/ygtcskn/US-infl-macro/main/output/figures/final/model_grid.png" alt="Actual vs predicted inflation, four models" width="100%">
+![Actual vs predicted inflation, four models](output/figures/final/model_grid.png)
 
 ## Layout
 
