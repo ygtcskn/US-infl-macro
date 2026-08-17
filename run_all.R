@@ -94,7 +94,7 @@ on.exit({
 rule <- function(char = "=") cat(strrep(char, 78), "\n", sep = "")
 
 rule()
-cat("INFLATION AND MACRO -- pipeline run ", run_id, "\n", sep = "")
+cat("US-INFL-MACRO -- pipeline run ", run_id, "\n", sep = "")
 rule()
 cat("R version   : ", R.version.string, "\n", sep = "")
 cat("Project root: ", PROJ_ROOT, "\n", sep = "")

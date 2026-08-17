@@ -7,7 +7,7 @@
 if (requireNamespace("here", quietly = TRUE)) {
   PROJ_ROOT <- here::here()
 } else {
-  PROJ_ROOT <- "C:/Users/ygtcs/Desktop/R base/inflation and macro"
+  PROJ_ROOT <- "C:/Users/ygtcs/Desktop/R base/US-infl-macro"
 }
 
 ### DIRECTORIES

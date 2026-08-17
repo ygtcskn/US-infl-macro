@@ -4,6 +4,8 @@ Forecasting US CPI inflation (YoY, `CPIAUCSL_PC1`) from a monthly macro panel of
 predictors, Jan 1994 – Sept 2025. Compares LASSO, Random Forest, XGBoost, ARIMAX and PCR
 on a chronological 70/30 split, with SHAP-based interpretation.
 
+Coursework for the Experimental Economics seminar.
+
 ![Actual vs predicted inflation, four models](output/figures/final/model_grid.png)
 
 ## Layout
