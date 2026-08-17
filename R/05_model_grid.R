@@ -11,14 +11,13 @@ plotdir <- FIG_FINAL
 
 ### PANEL SELECTION
 
-# Ranked by out-of-sample RMSE in results.xlsx. Swap in "PCR" here if wanted.
+# Ranked by out-of-sample RMSE in results.xlsx.
 panel_models <- c("ARIMAX", "LASSO", "RF", "XGBoost")
 
 model_colors <- c(
   Actual  = "grey40",
   ARIMAX  = "#1F4E79",
   LASSO   = "#006400",
-  PCR     = "#8B0000",
   RF      = "#E68613",
   XGBoost = "#6A1B9A"
 )

@@ -34,7 +34,7 @@ stages <- data.frame(
     "Prepare data      (FRED pull, transforms, ADF, differencing)",
     "Benchmark models  (LASSO / RF / XGBoost x {no lag, AR1} + ARIMAX)",
     "XGBoost + SHAP    (feature importance, SHAP, summary tables)",
-    "Final figures     (paper figures, LASSO coefficients, PCR)",
+    "Final figures     (paper figures, LASSO coefficients)",
     "Model grid        (2x2 actual vs predicted panel)"
   ),
   online   = c(TRUE, FALSE, FALSE, FALSE, FALSE),
